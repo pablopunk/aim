@@ -2,7 +2,7 @@
   "name": "aim",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "parcel build index.html",
     "start": "parcel index.html",
