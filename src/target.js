@@ -24,11 +24,16 @@ class Target {
   }
 
   touched (x, y) {
+    const xFrom = this.x - this.width
+    const xTo = this.x + this.width
+    const yFrom = this.y - this.width
+    const yTo = this.y + this.width
+
     return (
-      x >= this.x &&
-      x <= this.x + this.width &&
-      y >= this.y &&
-      y <= this.y + this.width
+      x >= xFrom &&
+      x <= xTo &&
+      y >= yFrom &&
+      y <= yTo
     )
   }
 }

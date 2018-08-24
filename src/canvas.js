@@ -12,4 +12,4 @@ document.querySelector('#canvas').appendChild(canvas)
 
 const ctx = canvas.getContext('2d')
 
-export default {ctx, height, width}
+export default {canvas, ctx, height, width}

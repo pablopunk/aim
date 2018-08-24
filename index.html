@@ -6,7 +6,11 @@
   <style>
   body {
     font-familiy: monospace;
-    color: #333;
+    color: aquamarine;
+    background-color: #333;
+  }
+  a {
+    color: tomato;
   }
   main {
     display: flex;
@@ -16,6 +20,11 @@
   }
   #canvas {
     background-color: #333;
+    cursor: url(https://file-tihpzywnlf.now.sh), auto;
+  }
+  #help {
+    text-align: center;
+    font-family: monospace;
   }
   </style>
 </head>
@@ -23,6 +32,10 @@
   <main>
     <pre id="fps">0 fps</pre>
     <div id="canvas"></div>
+    <div id="help">
+      <p>Try to shoot the targets</p>
+      <p><a href="https://github.com/pablopunk/aim">More coming soon</a></p>
+    </div>
   </main>
   <script src="./src/index.js"></script>
 </body>

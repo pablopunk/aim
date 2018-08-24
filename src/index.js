@@ -1,4 +1,4 @@
 import {loop} from './loop'
-import cfg from './canvas'
+import state from './canvas'
 
-loop(cfg)
+loop(state)
