@@ -1,6 +1,6 @@
 import {createTarget} from './targetCreator'
 import {circle} from './draw'
-import {fps, oneMoreFps} from './fps'
+import {oneMoreFps} from './fps'
 import {initMouse} from './mouse'
 
 let target
@@ -11,14 +11,12 @@ const defaultColor = 'black'
 
 function onMouseDown ({x, y}) {
   mouse = {x, y}
-  console.log(mouse, target)
   setTimeout(() => { mouse = null }, 100)
 }
 
-
 const render = () => {
   if (!target) {
-    target = createTarget(state);
+    target = createTarget(state)
   }
 
   state.ctx.clearRect(0, 0, state.width, state.height)
