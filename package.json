@@ -7,13 +7,16 @@
     "build": "parcel build index.html",
     "start": "parcel index.html",
     "dev": "parcel watch index.html",
-    "test": "standard && ava"
+    "test": "standard && ava",
+    "deploy": "npm run build && now dist",
+    "alias": "npm run build && now dist | xargs -I{} now alias {} aim"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.25.0",
+    "now": "^11.4.0",
     "parcel-bundler": "^1.9.7",
     "standard": "^11.0.1"
   }

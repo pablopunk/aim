@@ -20,8 +20,6 @@ $ npm run build  # build project into dist/
 ## Deploy
 
 ```bash
-$ now dist       # example of deployment using `now.sh`
-
-# How I get it into production (deploy + alias)
-$ now dist | xargs -I{} now alias {} aim
+$ npm run deploy # get a `now.sh` url with the project running
+$ npm run alias  # (only me for now) alias deployment to aim.now.sh
 ```
