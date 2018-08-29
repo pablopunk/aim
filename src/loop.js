@@ -2,9 +2,11 @@ import {createRandomTarget} from './targetCreator'
 import {circle} from './draw'
 import {oneMoreFps} from './fps'
 import {initMouse, getMouse, resetMouse} from './mouse'
+import {Bounds} from './bounds'
 
 let target
 let state
+let bounds
 
 const defaultColor = 'black'
 
@@ -12,6 +14,7 @@ const render = () => {
   if (!target) {
     target = createRandomTarget(state)
   }
+  console.log(target.delta)
 
   state.ctx.clearRect(0, 0, state.width, state.height)
 
@@ -27,6 +30,9 @@ const render = () => {
     }
   }
 
+  target.delta()
+  target = bounds.check(target)
+
   state.ctx.fillStyle = defaultColor
   resetMouse()
   oneMoreFps()
@@ -36,6 +42,7 @@ export function loop (_config) {
   if (!state) {
     state = _config
     initMouse(state.canvas)
+    bounds = new Bounds(state)
   }
 
   window.requestAnimationFrame(loop)
