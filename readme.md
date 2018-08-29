@@ -1,6 +1,6 @@
 # AIM [![Build status](https://travis-ci.org/pablopunk/aim.svg?branch=master)](https://travis-ci.org/pablopunk/aim)
 
->WIP
+> Shoot the targets.
 
 ## Dev
 
