@@ -14,7 +14,6 @@ const render = () => {
   if (!target) {
     target = createRandomTarget(state)
   }
-  console.log(target.delta)
 
   state.ctx.clearRect(0, 0, state.width, state.height)
 
