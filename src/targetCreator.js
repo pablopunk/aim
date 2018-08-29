@@ -4,7 +4,7 @@ import {Target} from './target'
 const minSize = 20
 const maxSize = 40
 
-export function createTarget ({width, height}) {
+export function createRandomTarget ({width, height}) {
   const radius = (Math.random() * (maxSize - minSize)) + minSize
   const diameter = radius * 2
 

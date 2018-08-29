@@ -1,5 +1,19 @@
-export function initMouse (onMouseDown, canvas) {
+let mouse
+
+function onMouseDown ({x, y}) {
+  mouse = {x, y}
+}
+
+export function initMouse (canvas) {
   window.addEventListener('mousedown', event => onMouseDown(getMousePositionFromCanvas(event, canvas)))
+}
+
+export function getMouse () {
+  return mouse
+}
+
+export function resetMouse () {
+  mouse = null
 }
 
 export function getMousePositionFromCanvas (event, canvas) {
