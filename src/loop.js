@@ -11,7 +11,6 @@ const defaultColor = 'black'
 
 function onMouseDown ({x, y}) {
   mouse = {x, y}
-  setTimeout(() => { mouse = null }, 100)
 }
 
 const render = () => {
@@ -26,9 +25,14 @@ const render = () => {
   /* END DRAWING */
 
   if (mouse && target.touched(mouse.x, mouse.y)) {
-    target = null
+    target.shrink()
+    if (target.dead()) {
+      target = null
+    }
   }
+
   state.ctx.fillStyle = defaultColor
+  mouse = null
   oneMoreFps()
 }
 
@@ -37,7 +41,7 @@ export function loop (_config) {
     state = _config
     initMouse(onMouseDown, state.canvas)
   }
-  window.requestAnimationFrame(loop)
 
+  window.requestAnimationFrame(loop)
   render()
 }

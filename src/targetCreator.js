@@ -1,7 +1,7 @@
 
 import {Target} from './target'
 
-const minSize = 10
+const minSize = 20
 const maxSize = 40
 
 export function createTarget({width, height}) {
