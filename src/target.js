@@ -25,7 +25,7 @@ class Target {
   }
 
   shrink () {
-    this.width -= 2
+    this.width -= 3
   }
 
   touched (x, y) {

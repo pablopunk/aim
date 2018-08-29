@@ -36,7 +36,7 @@ test('Target can be shrunk', async t => {
 
   t.is(target.width, 10)
   target.shrink()
-  t.is(target.width, 8)
+  t.is(target.width, 7)
 })
 
 test('Target can move', async t => {
