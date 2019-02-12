@@ -1,6 +1,6 @@
-import test from 'ava'
-import {Target} from './src/target'
-import {Bounds} from './src/bounds'
+const test = require('ava')
+const Target = require('./src/target')
+const Bounds = require('./src/bounds')
 
 test('Target can be touched correctly', async t => {
   const target = new Target(10, 10, 5)
@@ -50,7 +50,7 @@ test('Target can move', async t => {
 })
 
 function testBounds (t, x, y, changedX, changedY) {
-  const bounds = new Bounds({width: 100, height: 100})
+  const bounds = new Bounds({ width: 100, height: 100 })
   let target = new Target(10, 10, 10, -1, -2)
 
   const oldSpeedX = -1

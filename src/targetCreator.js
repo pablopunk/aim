@@ -1,11 +1,11 @@
 
-import {Target} from './target'
+const Target = require('./target')
 
 const minSize = 20
 const maxSize = 40
 const maxSpeed = 2
 
-export function createRandomTarget ({width, height}) {
+module.exports.createRandomTarget = function ({ width, height }) {
   const radius = (Math.random() * (maxSize - minSize)) + minSize
   const diameter = radius * 2.0
   const speedX = (Math.random() * maxSpeed) - (maxSpeed / 2.0)

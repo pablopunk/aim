@@ -1,12 +1,12 @@
 let fps = 0
 
-export function renderFps () {
+module.exports.renderFps = function () {
   document.querySelector('#fps').innerText = `${fps} fps`
   fps = 0
 }
 
-export function oneMoreFps () {
+module.exports.oneMoreFps = function () {
   fps++
 }
 
-window.setInterval(renderFps, 1000)
+window.setInterval(module.exports.renderFps, 1000)

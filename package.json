@@ -1,23 +1,24 @@
 {
   "name": "aim",
   "version": "1.0.0",
-  "description": "",
+  "description": "Shoot the targets",
   "main": "src/index.js",
   "scripts": {
-    "build": "parcel build index.html",
-    "start": "parcel index.html",
-    "dev": "parcel watch index.html",
+    "build": "px src/index.js build.js",
+    "start": "serve .",
+    "dev": "px -w src/index.js build.js",
     "test": "standard && ava",
-    "deploy": "npm run build && now dist",
-    "alias": "npm run build && now dist | xargs -I{} now alias {} aim"
+    "deploy": "npm run build && now"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^0.25.0",
-    "now": "^11.4.0",
-    "parcel-bundler": "^1.9.7",
-    "standard": "^11.0.1"
+    "ava": "*",
+    "serve": "*",
+    "standard": "*"
+  },
+  "now": {
+    "alias": "aim"
   }
 }

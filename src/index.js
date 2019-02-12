@@ -1,4 +1,4 @@
-import {loop} from './loop'
-import state from './canvas'
+const loop = require('./loop')
+const state = require('./canvas')
 
 loop(state)

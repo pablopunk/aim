@@ -1,8 +1,8 @@
-import {createRandomTarget} from './targetCreator'
-import {circle} from './draw'
-import {oneMoreFps} from './fps'
-import {initMouse, getMouse, resetMouse} from './mouse'
-import {Bounds} from './bounds'
+const Bounds = require('./bounds')
+const { createRandomTarget } = require('./targetCreator')
+const { circle } = require('./draw')
+const { oneMoreFps } = require('./fps')
+const { initMouse, getMouse, resetMouse } = require('./mouse')
 
 let target
 let state
@@ -37,7 +37,7 @@ const render = () => {
   oneMoreFps()
 }
 
-export function loop (_config) {
+function loop (_config) {
   if (!state) {
     state = _config
     initMouse(state.canvas)
@@ -47,3 +47,5 @@ export function loop (_config) {
   window.requestAnimationFrame(loop)
   render()
 }
+
+module.exports = loop

@@ -1,5 +1,5 @@
-class Bounds {
-  constructor ({width, height}) {
+module.exports = class {
+  constructor ({ width, height }) {
     this.width = width
     this.height = height
   }
@@ -15,5 +15,3 @@ class Bounds {
     return target
   }
 }
-
-module.exports = {Bounds}

@@ -1,4 +1,4 @@
-class Target {
+module.exports = class {
   constructor (
     x,
     y,
@@ -52,5 +52,3 @@ class Target {
     return this.hits > 4
   }
 }
-
-module.exports = {Target}
