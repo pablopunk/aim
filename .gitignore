@@ -1,5 +1,4 @@
 node_modules
-dist
+public/build.js*
 .cache
 package-lock.json
-build.js*

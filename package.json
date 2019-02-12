@@ -4,11 +4,10 @@
   "description": "Shoot the targets",
   "main": "src/index.js",
   "scripts": {
-    "build": "px src/index.js build.js",
+    "build": "px src/index.js public/build.js",
     "start": "serve .",
-    "dev": "px -w src/index.js build.js",
-    "test": "standard && ava",
-    "deploy": "npm run build && now"
+    "dev": "px -w src/index.js public/build.js",
+    "test": "standard && ava"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +16,5 @@
     "ava": "*",
     "serve": "*",
     "standard": "*"
-  },
-  "now": {
-    "alias": "aim"
   }
 }
