@@ -7,5 +7,5 @@ $ cargo install pax # pax bundler
 $ npm install    # install dependencies
 $ npm run dev    # build while watching for file changes
 $ npm start      # start a server
-$ npm test       # lint and test
+$ npm test       # run unit tests
 ```

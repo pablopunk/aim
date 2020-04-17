@@ -1,8 +1,8 @@
-const test = require('ava')
+const test = require('myass')
 const Target = require('./src/target')
 const Bounds = require('./src/bounds')
 
-test('Target can be touched correctly', async t => {
+test('Target can be touched correctly', async (t) => {
   const target = new Target(10, 10, 5)
 
   t.true(target.touched(5, 5))
@@ -16,7 +16,7 @@ test('Target can be touched correctly', async t => {
   t.false(target.touched(10, 16))
 })
 
-test('Target can be killed touching it 5 times', async t => {
+test('Target can be killed touching it 5 times', async (t) => {
   const target = new Target(10, 10, 5)
 
   target.touched(10, 10)
@@ -31,7 +31,7 @@ test('Target can be killed touching it 5 times', async t => {
   t.true(target.dead())
 })
 
-test('Target can be shrunk', async t => {
+test('Target can be shrunk', async (t) => {
   const target = new Target(10, 10, 10)
 
   t.is(target.width, 10)
@@ -39,7 +39,7 @@ test('Target can be shrunk', async t => {
   t.is(target.width, 7)
 })
 
-test('Target can move', async t => {
+test('Target can move', async (t) => {
   const target = new Target(10, 10, 10, 0.2, 0.4)
 
   t.is(target.x, 10)
@@ -49,7 +49,7 @@ test('Target can move', async t => {
   t.is(target.y, 10.4)
 })
 
-function testBounds (t, x, y, changedX, changedY) {
+function testBounds(t, x, y, changedX, changedY) {
   const bounds = new Bounds({ width: 100, height: 100 })
   let target = new Target(10, 10, 10, -1, -2)
 
@@ -63,7 +63,7 @@ function testBounds (t, x, y, changedX, changedY) {
   t.is(target.speedY !== oldSpeedY, changedY)
 }
 
-test('Target changes direction at bounds', async t => {
+test('Target changes direction at bounds', async (t) => {
   testBounds(t, 10, 11, true, false)
   testBounds(t, 9, 11, true, false)
   testBounds(t, 11, 10, false, true)
