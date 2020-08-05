@@ -1,4 +1,7 @@
 node_modules
-public/build.js*
+public/index.js*
 .cache
 package-lock.json
+yarn.lock
+
+.vercel

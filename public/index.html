@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>AIM</title>
-  <link rel="shortcut icon" href="./res/favicon.ico">
-  <link rel="stylesheet" href="./styles/index.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106008527-6"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <title>AIM</title>
+    <link rel="shortcut icon" href="./res/favicon.ico" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-106008527-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-        gtag('config', 'UA-106008527-6');
-  </script>
-</head>
-<body>
-  <main>
-    <pre id="fps">0 fps</pre>
-    <div id="canvas"></div>
-    <div id="help">
-      <p>Try to shoot the targets</p>
-      <p><a href="https://github.com/pablopunk/aim">More coming soon</a></p>
-    </div>
-  </main>
-  <script src="build.js"></script>
-</body>
+      gtag('config', 'UA-106008527-6')
+    </script>
+  </head>
+  <body>
+    <main>
+      <pre id="fps">0 fps</pre>
+      <div id="canvas"></div>
+      <div id="help">
+        <p>Try to shoot the targets</p>
+      </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
 </html>

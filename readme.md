@@ -3,9 +3,8 @@
 > Shoot the targets.
 
 ```bash
-$ cargo install pax # pax bundler
-$ npm install    # install dependencies
-$ npm run dev    # build while watching for file changes
-$ npm start      # start a server
-$ npm test       # run unit tests
+$ yarn       # dependencies
+$ yarn build # bundle code into public/ folder
 ```
+
+[aim.pablo.pink](https://aim.pablo.pink)

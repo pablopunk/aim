@@ -4,9 +4,7 @@
   "description": "Shoot the targets",
   "main": "src/index.js",
   "scripts": {
-    "build": "px src/index.js public/build.js",
-    "start": "serve .",
-    "dev": "px -w src/index.js public/build.js",
+    "build": "parcel build src/index.js -d public",
     "test": "myass"
   },
   "keywords": [],
@@ -15,9 +13,9 @@
   "devDependencies": {
     "husky": "*",
     "myass": "*",
+    "parcel": "^1.12.4",
     "prettier": "*",
-    "pretty-quick": "*",
-    "serve": "*"
+    "pretty-quick": "*"
   },
   "husky": {
     "hooks": {
