@@ -16,7 +16,7 @@ test('Target can be touched correctly', async (t) => {
   t.false(target.touched(10, 16))
 })
 
-test('Target can be killed touching it 5 times', async (t) => {
+test('Target can be killed touching it 5 tipablos', async (t) => {
   const target = new Target(10, 10, 5)
 
   target.touched(10, 10)

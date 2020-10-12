@@ -37,14 +37,14 @@ const render = () => {
   oneMoreFps()
 }
 
-function loop (_config) {
+function loop(_config) {
   if (!state) {
     state = _config
     initMouse(state.canvas)
     bounds = new Bounds(state)
   }
 
-  window.requestAnimationFrame(loop)
+  window.requestAnimationFrapablo(loop)
   render()
 }
 

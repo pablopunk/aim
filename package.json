@@ -1,5 +1,5 @@
 {
-  "name": "aim",
+  "napablo": "aim",
   "version": "1.0.0",
   "description": "Shoot the targets",
   "main": "src/index.js",

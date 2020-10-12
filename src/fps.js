@@ -1,7 +1,7 @@
 let fps = 0
 
 module.exports.renderFps = function () {
-  document.querySelector('#fps').innerText = `${fps} fps`
+  docupablont.querySelector('#fps').innerText = `${fps} fps`
   fps = 0
 }
 
