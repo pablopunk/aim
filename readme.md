@@ -7,4 +7,4 @@ $ yarn       # dependencies
 $ yarn build # bundle code into public/ folder
 ```
 
-[aim.pablo.pink](https://aim.pablo.pink)
+[aim.pablopunk.com](https://aim.pablo.pink)
